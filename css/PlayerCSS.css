@@ -1,0 +1,296 @@
+
+:root {
+    --body-bg-color: black;
+    --main-bg-color: #050f2e; /*#690080;*/
+    --font-color-prim: #FFFFFF;
+    --font-color-sec: #A4A4A4;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: Arial;
+
+}
+
+#main-container {
+    background-color: var(--main-bg-color);
+    margin-left: 8%;
+    width: 85%;
+    height: 80%;
+    min-height: 40%;
+}
+
+/*  ---------- Header Section   ---------------------  */
+
+
+#header-container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+    height: 5%;
+
+}
+.header-left-section {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px red solid;*/
+}
+
+
+#logo-text {
+    margin-left: -10%;
+}
+
+.header-left-section div p{
+    font-family: Arial;
+    font-size: x-large;
+}
+.image-circle {
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+}
+
+#favourite {
+    font-family: Arial;
+    margin-left: 40%;
+}
+
+.header-right-section {
+    /*border: 1px red solid;*/
+    background-color: var(--main-bg-color);
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-search {
+   /* padding: 1%;*/
+    width: 55%;
+    /*border: 1px red solid;*/
+}
+
+.header-search i {
+    position: absolute;
+}
+
+.search-icon {
+    padding: 0.7% ;
+    color: rgb(49, 0, 128);
+    width: 70px;
+    text-align: left;
+    color: lightgrey;
+}
+
+.search-input {
+    width: 80%;
+    padding: 3% 10%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 8px;
+    background-color: #180D42;
+    color: #FFFFFF;
+}
+
+.mic-icon {
+    padding: 0.7%;
+    color: rgb(49, 0, 128);
+    width: 70px;
+    color: gray;
+    margin-left: -3%;
+}
+
+.bell-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 15%;
+}
+
+#artist-header-icon {
+    height: 60px;
+    width: 60px;
+    margin-left: 10%;
+}
+
+
+/* ----------    Main Area    --------------  */
+
+.main-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-view-content {
+    width: 66%;
+    /*border: 1px red solid;*/
+}
+
+
+/* ----------- Right Side Queue Area  -------------- */
+
+.queue-section {
+    width: 33%;
+    height: 100vh;
+    overflow: hidden;
+    /*border: 1px red solid;*/
+}
+
+.queue-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+.collapsible {
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+.active, .collapsible:hover {
+    background-color: var(--main-bg-color);
+}
+
+.collapsible:after {
+    content: "Queue \2001 \02C4";
+    color: cyan;
+    font-weight: normal;
+    font-size: small;
+    float: right;
+    padding-right: 3%;
+}
+
+.active:after {
+    content: "Queue \2001 \02C5";
+    font-weight: normal;
+    font-size: small;
+    float: right;
+    padding-right: 3%;
+
+}
+
+.q-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--main-bg-color);
+    color: gray;
+}
+
+ol {
+    vertical-align: middle;
+    list-style-type:decimal-leading-zero;
+}
+
+ol li {
+    vertical-align: middle;
+    margin-bottom: 5%;
+    width: 90%;
+    font-family: Arial;
+    font-size: smaller;
+}
+
+ol li img {
+    vertical-align:middle;
+    margin: 0 4%;
+}
+
+.nav-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: small;
+}
+
+.nav-text div {
+    font-size: smaller;
+    color: gray;
+    margin-top: 10%;
+}
+
+.q-heart {
+    float: right;
+}
+
+
+/*  ------------- Mid Body Section   -------------   */
+
+/* --------- Latest Release ------------- */
+
+.latest-release-parent {
+    color: #FFFFFF;
+    margin-left: 13%;
+}
+.section_headers {
+    margin-left: -2%;
+}
+.latest-release-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   /* border: solid 1px red;*/
+}
+
+.latest-release-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: -2%;
+}
+
+.latest-release-block img {
+    margin-right: 5%;
+}
+.la-rel-time {
+    margin-top: -13%;
+    margin-left: 33%;
+    float: right;
+}
+
+
+/* ------------ Popular Artists ------------- */
+
+.popular-artists-parent {
+    margin-top: 4%;
+    width: 80%
+
+}
+.flex-blocks {
+    margin-right: 1.5%;
+}
+
+.image-circle-big {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin-bottom: 1%;
+}
+.artists_name {
+    margin-top: -0.05%;
+    padding-top: 2%;
+    text-align: center;
+}
+
