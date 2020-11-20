@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link href="./css/PlayerCSS.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div id="MusicPlayer-Container" class="MusicPlayer-Container">
+
+        <div id="mp-artist-details" class="mp-artist-details">
+            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+            <span class="nav-text mp-song-name"><b>Imagine by John</b><div>John Lennon</div></span>
+            <i class="far fa-heart mp-song-name mp-stop-symbol" style="font-weight: lighter;"></i>
+            <i class="fas fa-ban mp-song-name mp-stop-symbol" style="font-weight: lighter;"></i>
+        </div>
+
+        <div id="mp-player" class="mp-player">
+            <div id="mp-keys" class="mp-keys">
+                <i class="material-icons">shuffle</i>
+                <i class="material-icons">skip_previous</i>
+                <i class="material-icons">play_circle_outline</i>
+                <i class="material-icons">pause_circle_outline</i>
+                <i class="material-icons">skip_next</i>
+                <i class="material-icons">repeat</i>
+            </div>
+            <div id="mp-bar" class="mp-bar">
+                <span>0:12</span>
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <span>4:55</span>
+
+            </div>
+
+        </div>
+
+        <div id="mp-controls">
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>

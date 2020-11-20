@@ -377,3 +377,77 @@ ol li img {
 
 /* -----   Music Player at Footer Section  -------- */
 
+.MusicPlayer-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #282828;
+    min-height: 15%;
+    min-width: 80%;
+}
+
+.mp-artist-details {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mp-artist-details img{
+    margin-right: 2%;
+}
+
+.mp-song-name {
+    color: lightgrey;
+}
+
+.mp-stop-symbol {
+    font-size: .9rem;
+    margin-top: -5%;
+    margin-left: 4%;
+}
+.mp-artist-details img{
+    height: 65px;
+    width: 65px;
+}
+
+.mp-player {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mp-keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: lightgrey;
+}
+
+.mp-keys i {
+    margin-right: 2%;
+}
+
+.mp-bar {
+    text-align: center;
+}
+.mp-bar span{
+    font-size: 0.7rem;
+    color: lightgray;
+
+}
+
+progress {
+    width: 35em;
+    height: 0.25em;
+    background: gray;
+    color: greenyellow;
+    line-height: 1.5em;
+    margin: 0 0.4% 0.4% 0.35%;
+}
+
+progress::-webkit-progress-value { background: limegreen;}
+
+
+
+
