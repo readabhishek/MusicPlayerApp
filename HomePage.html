@@ -8,25 +8,290 @@
 <body>
     <section id="main-container">
         <header>
-            <div>
-                <iframe src="./HeaderFile.html" height="100%" width="100%" style="border: none">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
+            <div id="header-container">
+                <div id="logo-and-favourites" class="header-left-section">
+                    <img id="player-logo" src="./images/Player-Logo.jpg" class="image-circle">
+                    <div id="logo-text"><p>Ninja<br><b>Studio</b></p></div>
+                    <div id="favourite">Favourites</div>
+                </div>
+
+                <div id="search-and-bell" class="header-right-section">
+                    <div class="header-search">
+                        <i class="fas fa-search search-icon"> </i>
+                        <input class="search-input" type="text" placeholder="Search" />
+                        <i class="fas fa-microphone mic-icon"></i>
+                    </div>
+                    <img id="bell-icon" class="bell-icon" src="./images/Bell-Icon.PNG">
+                    <img id="artist-header-icon" class="image-circle" src="./images/leah-logo.PNG">
+
+                </div>
             </div>
         </header>
 
         <main class="main-view">
 
             <div class="main-view-content">
-                <iframe src="./Main-View-Area.html" height="100%" width="100%" style="border: none">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-            </div>
+
+                <div id="carousel"></div>
+
+
+
+
+                <!--  Latest Release Section  Start  -->
+
+                <div id="latest-release" class="latest-release-parent">
+                    <h3 class="section_headers">Latest Release</h3>
+                    <div class="latest-release-container">
+                        <div class="latest-release-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                            <span class="nav-text la-rel-time" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div></span>
+                        </div>
+                        <div class="latest-release-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                            <span class="nav-text la-rel-time" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div></span>
+                        </div>
+                        <div class="latest-release-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                            <span class="nav-text la-rel-time" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div></span>
+                        </div>
+                        <div class="latest-release-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                            <span class="nav-text la-rel-time" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div></span>
+                        </div>
+                        <div class="latest-release-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                            <span class="nav-text la-rel-time" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div></span>
+                        </div>
+                    </div>
+                </div>     <!--End of Latest Release Section-->
+
+
+
+
+                <!--   Popular Artist Section Start  -->
+
+                <div id="popular-artist" class="latest-release-parent popular-artists-parent">
+                    <h3 class="section_headers">Popular Artists</h3>
+                    <div class="latest-release-container">
+                        <div class="flex-blocks">
+                            <img src="./images/Ed-Sheeran.jpg" class="image-circle-big">
+                            <h5 class="artists_name">Ed Shreeran</h5>
+                        </div>
+                        <div class="flex-blocks">
+                            <img src="./images/cold-play.jpg" class="image-circle-big">
+                            <h5 class="artists_name">ColdPlay</h5>
+                        </div>
+                        <div class="flex-blocks">
+                            <img src="./images/zayn.jpg" class="image-circle-big">
+                            <h5 class="artists_name">Zayn</h5>
+                        </div >
+                        <div class="flex-blocks">
+                            <img src="./images/charlie.jpg" class="image-circle-big">
+                            <h5 class="artists_name">Charlie Puth</h5>
+                        </div>
+                        <div class="flex-blocks">
+                            <img src="./images/imagine-dra.jpg" class="image-circle-big">
+                            <h5 class="artists_name">Imagine Dragon</h5>
+                        </div>
+                        <div class="flex-blocks">
+                            <img src="./images/bruno.jpg" class="image-circle-big">
+                            <h5 class="artists_name">Bruno</h5>
+                        </div>
+                    </div>
+                </div>   <!--   End of Popular Artist Section  -->
+
+
+                <!--   Music Genre Section-1 Start -->
+
+                <div id="genre-sec1">
+                    <div class="genre-sec1-container">
+                        <img id="stations" src="./images/gen-sec1-pic1.PNG" class="image-sq-genre-1">
+                        <span><img src="./images/love-pic1.PNG" class="image-circle-genre"></span>
+                        <span><img src="./images/retro.jpg" class="image-circle-genre"></span>
+                        <span><img src="./images/retro.jpg" class="image-circle-genre"></span>
+                        <span><img src="./images/retro.jpg" class="image-circle-genre"></span>
+                        <span><img src="./images/retro.jpg" class="image-circle-genre"></span>
+                        <span><img src="./images/retro.jpg" class="image-circle-genre"></span>
+                    </div>
+                </div>
+
+                <!--   Music Genre Section-1 End -->
+
+                <!--   Music Genre Section-2 Start -->
+
+                <div id="genre-sec2" class="genre-sec2-container">
+                    <img src="./images/party.jpg" class="image-sq-genre-2">
+                    <img src="./images/electronic.jpg" class="image-sq-genre-2">
+                    <img src="./images/road-trip.jpg" class="image-sq-genre-2">
+
+                </div>
+
+                <!--   Music Genre Section-2 End -->
+
+
+                <!--  Latest English Section Start  -->
+
+                <div id="latest-english" class="latest-release-parent">
+                    <h3 class="section_headers">Latest English</h3>
+
+                    <div id="latest-english-container" class="latest-release-container latest-EngHind-flex">
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                    </div>
+
+                </div>     <!--  End of Latest English Section Start  -->
+
+
+
+                <!--    Latest Hindi Section    -->
+
+                <div id="latest-hindi" class="latest-release-parent">
+                    <h3 class="section_headers">Latest English</h3>
+
+                    <div id="latest-hindi-container" class="latest-release-container latest-EngHind-flex">
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+
+                        </div>
+                        <div class="latest-english-block">
+                            <img src="./images/l-rel-pic1.PNG" class="q-pics">
+                            <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
+                        </div>
+                    </div>
+                </div>  <!--   End of Latest Hindi Section    -->
+
+
+            </div>  <!--   End of Main View Section    -->
+
+
+
+            <!--   Start - Queue Section in Right Side     -->
+
             <div class="queue-section">
-                <iframe src="./Queue-Section.html" height="100%" width="100%" style="border: none">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
-            </div>
+
+                <div class="queue-container">
+                    <button class="collapsible"><b>Queue</b></button>
+                    <div class="q-content">
+                        <ol>
+                            <li>
+                                <img src="./images/q-pic-1.PNG" class="q-pics">
+                                <span class="nav-text"><b>Mirage</b><div>Else</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-2.PNG" class="q-pics">
+                                <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-3.PNG" class="q-pics">
+                                <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-4.PNG" class="q-pics">
+                                <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-1.PNG" class="q-pics">
+                                <span class="nav-text"><b>Mirage</b><div>Else</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-2.PNG" class="q-pics">
+                                <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-3.PNG" class="q-pics">
+                                <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-4.PNG" class="q-pics">
+                                <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-1.PNG" class="q-pics">
+                                <span class="nav-text"><b>Mirage</b><div>Else</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-2.PNG" class="q-pics">
+                                <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-3.PNG" class="q-pics">
+                                <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                            <li>
+                                <img src="./images/q-pic-4.PNG" class="q-pics">
+                                <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart"></span>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+
+            </div>   <!--   End of Queue Section  -->
+
 
         </main>
 
@@ -38,4 +303,21 @@
 
 
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
 </html>

@@ -1,7 +1,7 @@
 
 :root {
     --body-bg-color: black;
-    --main-bg-color: #050f2e; /*#690080;*/
+    --main-bg-color: #0b1026; /*#050f2e;*/ /*#690080;*/
     --font-color-prim: #FFFFFF;
     --font-color-sec: #A4A4A4;
 }
@@ -9,14 +9,13 @@
 body {
     background-color: var(--body-bg-color);
     font-family: Arial;
-
 }
 
 #main-container {
     background-color: var(--main-bg-color);
-    margin-left: 8%;
-    width: 85%;
-    height: 80%;
+    margin-left: 6%;
+    width: 88%;
+    height: auto;
     min-height: 40%;
 }
 
@@ -98,7 +97,7 @@ body {
     font-weight: 300;
     border: none;
     border-radius: 8px;
-    background-color: #180D42;
+    background-color: #11193e; /*#180D42*/
     color: #FFFFFF;
 }
 
@@ -137,12 +136,13 @@ body {
 }
 
 
-/* ----------- Right Side Queue Area  -------------- */
+/* ----------- Right Side Queue Songs Section  -------------- */
 
 .queue-section {
     width: 33%;
     height: 100vh;
     overflow: hidden;
+    margin-left: 1%;
     /*border: 1px red solid;*/
 }
 
@@ -157,8 +157,8 @@ body {
     background-color: var(--main-bg-color);
     color: white;
     cursor: pointer;
-    padding: 18px;
-    width: 95%;
+    padding: 12px;
+    width: 90%;
     border: none;
     text-align: left;
     outline: none;
@@ -240,9 +240,10 @@ ol li img {
 .latest-release-parent {
     color: #FFFFFF;
     margin-left: 13%;
+    margin-top: 5%;
 }
 .section_headers {
-    margin-left: -2%;
+    /*margin-left: -2%;*/
 }
 .latest-release-container {
     display: flex;
@@ -258,7 +259,7 @@ ol li img {
     flex-wrap: nowrap;
     width: 50%;
     margin-bottom: 2%;
-    margin-left: -2%;
+    /*margin-left: -2%;*/
 }
 
 .latest-release-block img {
@@ -279,7 +280,7 @@ ol li img {
 
 }
 .flex-blocks {
-    margin-right: 1.5%;
+    margin-right: 2%;
 }
 
 .image-circle-big {
@@ -293,4 +294,86 @@ ol li img {
     padding-top: 2%;
     text-align: center;
 }
+
+/* ------------ Music Genre Section - 1  ----------- */
+
+.genre-sec1-container {
+    background-color: #0f1642;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 13%;
+}
+
+#stations {
+    height: 110px;
+    width: 130px;
+    margin: 2%;
+    padding-right: 1%;
+}
+.genre-sec1-container span {
+    margin-right: 1.5%
+}
+
+.image-circle-genre {
+    height: 88px;
+    width: 88px;
+    /*margin-right: 2%;*/
+    padding-bottom: 0%;
+    border-radius: 50%;
+
+}
+
+/* ------------ Music Genre Section - 1  ----------- */
+
+.genre-sec2-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    justify-content: space-between;
+    margin-left: 13%;
+    margin-top: 2%
+
+}
+.image-sq-genre-2 {
+    height: 140px;
+    width: 260px;
+}
+
+
+/* ------------ Latest English Section  ----------- */
+
+.latest-EngHind-flex {
+
+    justify-content: space-between;
+    flex-shrink: inherit;
+}
+
+.latest-english-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 4%;
+    /*margin-right: 1.5%;*/
+}
+
+.latest-english-block img {
+    height: 120px;
+    width: 127px;
+
+}
+
+.latest-english-block span {
+    margin-top: 3%;
+}
+
+.latest-english-block span div {
+    margin-top: -0.0000001%;
+}
+
+
+/* -----   Music Player at Footer Section  -------- */
 
