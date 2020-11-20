@@ -448,6 +448,38 @@ progress {
 
 progress::-webkit-progress-value { background: limegreen;}
 
+.mp-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.mp-controls i {
+    margin-top: 8%;
+    margin-right: 6%;
+    color: lightgrey;
+    font-size: 1.2rem;
+}
+
+.mp-controls span {
+    margin-top: 7%;
+    margin-right: 6%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+:active::-webkit-slider-thumb {
+    background: #fff;
+}
 
 
 
