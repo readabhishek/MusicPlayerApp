@@ -507,12 +507,6 @@ input[type=range]::-webkit-slider-thumb {
     flex-direction: column;
 }
 
-.sp-right-list-area {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-}
-
 .sp-album-summary {
     display: flex;
     flex-direction: row;
@@ -611,7 +605,7 @@ input[type=range]::-webkit-slider-thumb {
     background-color: #202439;
     list-style-type:decimal-leading-zero;
     list-style-position: inside;
-    padding: 1%;
+    padding: 0.5%;
     margin: 0 0 0.6% 0;
     color: lightgrey;
     font-size: smaller;
@@ -636,4 +630,46 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 
+/* ---- Single PlayList - Right Side Queue Section   ----- */
+
+.sp-right-list-area {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-artists-list {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg-color);
+    /*overflow-y: scroll;*/
+}
+
+.sp-recently-list {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg-color);
+}
+
+.sp-artists-list-content {
+    min-height: 100%;
+    overflow: visible;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+.sp-artists-list::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.sp-artists-list::-webkit-scrollbar-thumb
+{
+    background-color: lightsteelblue;
+    border: 2px solid #555555;
+}
 
