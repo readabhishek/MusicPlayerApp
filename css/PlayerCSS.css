@@ -122,6 +122,103 @@ body {
 }
 
 
+
+/* ----- Carousel in Home Page -------- */
+
+
+#carousel {
+    user-select: none;
+    height: auto;
+    margin-bottom: -25%;
+    margin-top: 2%;
+    margin-left: -1.2%;
+}
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 28vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin-right: -7%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#slider label {
+    margin: auto;
+    width: 47%;
+    height: 45%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-35%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+    box-shadow: 4px 6px 10px 0 rgba(0,0,0,.3), 1px 1px 2px 3px rgba(0,0,0,.2);
+    transform: translate3d(35%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+}
+
+#slide1 {
+    background: url("../images/best1970.jpg") no-repeat center center;
+    background-size: cover;
+    border: #FFFFFF solid 3px;
+}
+#slide2 {
+    background: url("../images/new-music-friday.jpg") no-repeat center center;
+    background-size: cover;
+    border: #FFFFFF solid 3px;
+}
+#slide3 { background: url("../images/mostView.jpg") no-repeat center center;
+    background-size: cover;
+    border: #FFFFFF solid 3px;
+}
+#slide4 { background: url("../images/rock2020.jpg") no-repeat center center;
+    background-size: cover;
+    border: #FFFFFF solid 3px;
+}
+#slide5 { background: url("../images/IndianClassical.jpg") no-repeat center center;
+    background-size: cover;
+    border: #FFFFFF solid 3px;
+}
+
+
+
 /* ----------    Main Area    --------------  */
 
 .main-view {
@@ -500,6 +597,8 @@ input[type=range]::-webkit-slider-thumb {
 .sp-screen-container {
     display: flex;
     flex-direction: row;
+    margin-left: 8.5%;
+    margin-top: 2%
 }
 .sp-main-area {
     width: 70%;
