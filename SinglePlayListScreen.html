@@ -12,9 +12,11 @@
 <body>
     <section id="main-container">
         <header>
+            <!-- for code reuse, the header is coded in another file, being referred here -->
             <iframe src="HeaderFile.html" width="100%" height="auto" style="border: none"></iframe>
             <div style="margin-bottom: -3%; margin-left: 1%"><a href="HomePage.html">
-                <img src="./images/back.png" style="width: 30px; height: 30px;"><span style="color: #FFFFFF;">Back</span></a></div>
+                <img src="./images/back.png" style="width: 30px; height: 30px;"><span style="color: #FFFFFF;">Back</span></a>
+            </div>
         </header>
 
         <div id="sp-screen-container" class="sp-screen-container">
@@ -188,12 +190,15 @@
 
             </div>
         </div>
-        <footer>
+        <footer class="footer-div" style="visibility: visible; width: 87.45%">
+            <!-- for code reuse, the music player is coded in another file, being referred here -->
             <iframe id="sp-music-player" src="MusicPlayer.html" width="100%" height="100%" style="border: none; margin-right: -1%;"></iframe>
         </footer>
     </section>
 </body>
 <script>
+
+    /* The below JS code is to handle Collapsible section */
     var coll = document.getElementsByClassName("collapsible");
     var i;
 

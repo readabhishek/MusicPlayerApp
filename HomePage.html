@@ -12,32 +12,15 @@
 <body>
     <section id="main-container">
         <header>
-            <div id="header-container">
-                <div id="logo-and-favourites" class="header-left-section">
-                    <img id="player-logo" src="./images/Player-Logo.jpg" class="image-circle">
-                    <div id="logo-text"><p>Ninja<br><b>Studio</b></p></div>
-                    <div id="favourite">Favourites</div>
-                </div>
-
-                <div id="search-and-bell" class="header-right-section">
-                    <div class="header-search">
-                        <i class="fas fa-search search-icon"> </i>
-                        <input class="search-input" type="text" placeholder="Search"/>
-                        <i class="fas fa-microphone mic-icon"></i>
-                    </div>
-                    <img id="bell-icon" class="bell-icon" src="./images/Bell-Icon.PNG">
-                    <img id="artist-header-icon" class="image-circle" src="./images/leah-logo.PNG">
-
-                </div>
-            </div>
+            <!-- Header is used in multiple pages, so for code reuse this has been created in a separate file -->
+            <iframe src="HeaderFile.html" width="100%" height="auto" style="border: none"></iframe>
         </header>
 
+        <!--  Home Page Middle Section  -->
+
         <main class="main-view">
-
             <div class="main-view-content">
-
-
-                <div id="carousel">
+                <div id="carousel">           <!-- Home Page Carousal -->
                     <section id="slider">
                         <input type="radio" name="slider" id="s1">
                         <input type="radio" name="slider" id="s2">
@@ -58,23 +41,22 @@
                 <div id="latest-release" class="latest-release-parent">
                     <h3 class="section_headers">Latest Release</h3>
                     <div class="latest-release-container">
-                        <div class="latest-release-block">
+                        <div class="latest-release-block" style="position: relative">
+                            <a href="#footer-div" onclick="displayPlayer()">
+                                  <i class="material-icons  image-text play-image play-image-m-right" style="font-size: 3rem;">play_arrow</i></a>
                             <img src="./images/onism.jpg" class="q-pics1">
                             <span class="nav-text"><b>Onism</b><div>AUG 11, 2017</div></span>
-                            <span class="nav-text la-rel-time dropdown" style="font-size: large"><b>...</b><div
-                                    style="font-size: .7rem">4:44</div>
-                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px"
-                                        height="128px"></iframe>
+                            <span class="nav-text la-rel-time dropdown" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div>
+                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px" height="128px"></iframe>
                             </span>
-
                         </div>
-                        <div class="latest-release-block">
+                        <div class="latest-release-block" style="position: relative">
+                            <a href="#footer-div" onclick="displayPlayer()">
+                                <i class="material-icons  image-text play-image play-image-m-right" style="font-size: 3rem;">play_arrow</i></a>
                             <img src="./images/sam-smith.jpg" class="q-pics1">
                             <span class="nav-text"><b>Love Goes</b><div>Sep 16, 2020</div></span>
-                            <span class="nav-text la-rel-time dropdown" style="font-size: large"><b>...</b><div
-                                    style="font-size: .7rem">4:44</div>
-                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px"
-                                        height="128px"></iframe>
+                            <span class="nav-text la-rel-time dropdown" style="font-size: large"><b>...</b><div style="font-size: .7rem">4:44</div>
+                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px" height="128px"></iframe>
                             </span>
                         </div>
                         <div class="latest-release-block">
@@ -82,8 +64,7 @@
                             <span class="nav-text"><b>LG6</b><div>AUG 11, 2017</div></span>
                             <span class="nav-text la-rel-time dropdown" style="font-size: large"><b>...</b><div
                                     style="font-size: .7rem">4:44</div>
-                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px"
-                                        height="128px"></iframe>
+                                <iframe class="dropdown-content" src="DropdownMenu.html" width="140px" height="128px"></iframe>
                             </span>
                         </div>
                         <div class="latest-release-block">
@@ -113,12 +94,13 @@
                 <div id="popular-artist" class="latest-release-parent popular-artists-parent">
                     <h3 class="section_headers">Popular Artists</h3>
                     <div class="latest-release-container">
-                        <div class="flex-blocks">
+                        <div class="flex-blocks" style=" position: relative">
+                            <a href="SinglePlayListScreen.html"><i class="material-icons image-text play-image" style="font-size: 3rem">play_arrow</i></a>
                             <img src="./images/Ed-Sheeran.jpg" class="image-circle-big">
                             <h5 class="artists_name">Ed Shreeran</h5>
                         </div>
                         <div class="flex-blocks" style=" position: relative">
-                            <a href="SinglePlayListScreen.html"><i class="material-icons image-text play-image"style="font-size: 3rem">play_arrow</i></a>
+                            <a href="SinglePlayListScreen.html"><i class="material-icons image-text play-image" style="font-size: 3rem">play_arrow</i></a>
                             <img src="./images/cold-play.jpg" class="image-circle-big">
                             <h5 class="artists_name">ColdPlay</h5>
                         </div>
@@ -325,6 +307,7 @@
                                 <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
                                 <img src="./images/q-heart.PNG" class="q-heart"></span>
                             </li>
+
                             <li class="li-HomePage">
                                 <img src="./images/q-pic-4.PNG" class="q-pics">
                                 <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
@@ -332,48 +315,18 @@
                             </li>
                         </ol>
                     </div>
-
                 </div>
-
             </div>   <!--   End of Queue Section  -->
 
 
-        </main>
+        </main>  <!-- End of Main Section -->
 
-
-        <footer>
-            <div id="MusicPlayer-Container" class="MusicPlayer-Container">
-
-                <div id="mp-artist-details" class="mp-artist-details">
-                    <img src="./images/l-rel-pic1.PNG" class="q-pics">
-                    <span class="nav-text mp-song-name"><b>Imagine by John</b><div>John Lennon</div></span>
-                    <i class="far fa-heart mp-song-name mp-stop-symbol" style="font-weight: lighter;"></i>
-                    <i class="fas fa-ban mp-song-name mp-stop-symbol" style="font-weight: lighter;"></i>
-                </div>
-
-                <div id="mp-player" class="mp-player">
-                    <div id="mp-keys" class="mp-keys">
-                        <i class="material-icons">shuffle</i>
-                        <i class="material-icons">skip_previous</i>
-                        <i class="material-icons">play_circle_outline</i>
-                        <i class="material-icons">pause_circle_outline</i>
-                        <i class="material-icons">skip_next</i>
-                        <i class="material-icons">repeat</i>
-                    </div>
-                    <div id="mp-bar" class="mp-bar">
-                        <span>0:12</span>
-                        <progress id="file" value="32" max="100"> 32%</progress>
-                        <span>4:55</span>
-                    </div>
-                </div>
-
-                <div id="mp-controls" class="mp-controls">
-                    <i class="material-icons">playlist_play</i>
-                    <i class="material-icons">devices</i>
-                    <i class="material-icons">volume_up</i>
-                    <span id="vol"><input id="volume" type="range" min="0" max="100" step="5" value="50"/></span>
-                    <i class="material-icons">open_in_full</i>
-                </div>
+        <! -- Footer Section Start. It contains the Music Player -->
+        <footer id="footer">
+            <div id="footer-div" class="footer-div">
+                <!-- For code reuse, the music player is coded is another file -->
+                <iframe id="sp-music-player" src="MusicPlayer.html" width="100%" height="100%"
+                        style="border: none; margin-right: -1%;"></iframe>
             </div>
         </footer>
 
@@ -388,7 +341,7 @@
     for (let j = 0; j < coll.length; j++) {   /* This code makes sure the list is loaded after screen load  */
         coll[j].classList.toggle("active");
         let content1 = coll[j].nextElementSibling;
-        content1.style.maxHeight = content1.scrollHeight + "px";
+        content1.style.maxHeight = content1.scrollHeight + 30 + "px";
     }
 
     /* The below code runs after click event on Queue */
@@ -402,6 +355,12 @@
                 content.style.maxHeight = content.scrollHeight + "px";
             }
         });
+    }
+
+    function displayPlayer() {
+        let player = document.getElementById("footer-div");
+        player.style.display = 'block';
+        player.style.visibility = 'visible';
     }
 </script>
 

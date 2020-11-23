@@ -868,6 +868,10 @@ input[type=range]::-webkit-slider-thumb {
     z-index: 1;
 }
 
+.play-image-m-right {
+   left: 5%;
+}
+
 .flex-blocks:hover img {
     opacity: 0.6;
     transition: transform  .5s ease;
@@ -884,3 +888,32 @@ input[type=range]::-webkit-slider-thumb {
     width: 101%;
 }
 
+.latest-release-block:hover img{
+    opacity: 0.6;
+    transition: transform  .5s ease;
+}
+
+.latest-release-block:hover  i{
+    visibility: visible;
+    cursor:pointer;
+}
+
+/* Styles to handle the Music Player Visibility on click  */
+
+.footer-div {
+    position: fixed;
+    top: 92%;
+    width: 87.2%;
+    left: 6.4%;
+   /* display: none;*/
+    visibility: hidden;
+}
+
+.footer-div:active {
+    display: block;
+}
+
+#abcd:focus + .footer-div {
+    display: block;
+    visibility: visible;
+}
