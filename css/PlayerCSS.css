@@ -296,11 +296,11 @@ body {
     font-size: small;
     float: right;
     padding-right: 3%;
-
 }
 
 .q-content {
     padding: 0 18px;
+    /*max-height: 0;*/   /* If uncommented will make the left Queue list hidden by default */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -504,10 +504,9 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-color: #282828;
-    position: -webkit-sticky;
+    /*position: -webkit-sticky;
     position: sticky;
-    top: 0;
-
+    top: 0;*/
 }
 
 .mp-artist-details {
@@ -615,8 +614,10 @@ input[type=range]::-webkit-slider-thumb {
     display: flex;
     flex-direction: row;
     margin-left: 8.5%;
-    margin-top: 2%
+    margin-top: 2%;
 }
+
+
 .sp-main-area {
     width: 70%;
     display: flex;
@@ -829,8 +830,6 @@ input[type=range]::-webkit-slider-thumb {
 .dropdown-container {
     display: flex;
     flex-direction: column;
-    /*max-width: 150px;
-    max-height: 150px;*/
     background-color: lightgrey;
     color: grey;
 }
@@ -838,18 +837,50 @@ input[type=range]::-webkit-slider-thumb {
 .drop-down-row {
     display: flex;
     flex-direction: row;
-    /*width: 150px;*/
-    margin: 1%;
+    width: 100%;
+    margin-left: -5%;
     align-items: center;
     border-bottom: lightgrey 0.05rem solid;
 }
 
 .drop-down-text {
     color: grey;
-    font-size: small;
-    margin-right: 5%;
-    margin-bottom: 2%;
+    font-size: 0.7rem;
+    margin-right: 7%;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.drop-down-row:hover {
+    background-color: lightsalmon;
 }
 
 
 /*------   Toggle Between Home Screen and Single Playlist Screen --------- */
+
+.play-image {
+    top: 23%;
+    left: 30%;
+    color: white;
+    visibility: hidden;
+    /*border: 1px white solid;*/
+    margin: 0;
+    z-index: 1;
+}
+
+.flex-blocks:hover img {
+    opacity: 0.6;
+    transition: transform  .5s ease;
+}
+
+.flex-blocks:hover  i {
+    visibility: visible;
+}
+
+#sp-music-player {
+    padding: 0;
+    margin-left: -0.5%;
+    margin-bottom: -4.6%;
+    width: 101%;
+}
+

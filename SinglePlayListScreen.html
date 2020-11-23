@@ -10,14 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div id="sp-screen-container" class="sp-screen-container">
-        <div id="sp-main-area" class="sp-main-area">
+    <section id="main-container">
+        <header>
+            <iframe src="HeaderFile.html" width="100%" height="auto" style="border: none"></iframe>
+            <div style="margin-bottom: -3%; margin-left: 1%"><a href="HomePage.html">
+                <img src="./images/back.png" style="width: 30px; height: 30px;"><span style="color: #FFFFFF;">Back</span></a></div>
+        </header>
 
-            <div id="sp-album-summary" class="sp-album-summary">
-                <span id="album-image"><img src="./images/cold-play.jpg"></span>
-                <span id="album-info" class="album-info">
+        <div id="sp-screen-container" class="sp-screen-container">
+            <div id="sp-main-area" class="sp-main-area">
+
+                <div id="sp-album-summary" class="sp-album-summary">
+                    <span id="album-image"><img src="./images/cold-play.jpg"></span>
+                    <span id="album-info" class="album-info">
                    <div id="album-name-followers">
-                       <span id="album-name" class="font25px"><span><b>ColdPlay</b></span><span class="fontSmall" style="margin-top: 2.5%">British Band</span></span>
+                       <span id="album-name" class="font25px"><span><b>ColdPlay</b></span><span class="fontSmall"
+                                                                                                style="margin-top: 2.5%">British Band</span></span>
                        <div id="followers" class="fontSmall"><p>851 Followers</p></div>
                    </div>
                    <div><p class="fontSmall">Coldplay are a British rock band formed in London in 1996. Vocalist, rhythm guitarist
@@ -34,8 +42,8 @@
                    </div>
                </span>
 
-            </div>
-            <div id="sp-album-songs" class="sp-album-songs">
+                </div>
+                <div id="sp-album-songs" class="sp-album-songs">
 
                     <ol>
                         <li class="album-songs-block">
@@ -109,82 +117,91 @@
             </div>
 
 
+            <div id="sp-right-list-area" class="sp-right-list-area">
 
-        <div id="sp-right-list-area" class="sp-right-list-area">
-
-            <div id="sp-artists-list" class="queue-section sp-artists-list scrollbar">
-                        <button class="collapsible"><b>Similar Artists</b></button>
-                        <div class="sp-artists-list-content">
-                            <ol class="ol-HomePage">
-                                <div class="latest-release-block" style="width: 100%">
-                                    <img src="./images/dragons.PNG" class="q-pics">
-                                    <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
-                                    <span class="nav-text la-rel-time" style="font-size: large; margin-bottom: -6%"><b>...</b><div style="font-size: .7rem">4:44</div></span>
-                                </div>
-                                <div class="latest-release-block" style="width: 100%">
-                                    <img src="./images/dragons.PNG" class="q-pics">
-                                    <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
-                                    <span class="nav-text la-rel-time" style="font-size: large; margin-bottom: -6%"><b>...</b><div style="font-size: .7rem">4:44</div></span>
-                                </div>
-                                <div class="latest-release-block" style="width: 100%">
-                                    <img src="./images/dragons.PNG" class="q-pics">
-                                    <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
-                                    <span class="nav-text la-rel-time" style="font-size: large; margin-bottom: -6%"><b>...</b><div style="font-size: .7rem">4:44</div></span>
-                                </div>
-                            </ol>
+                <div id="sp-artists-list" class="queue-section sp-artists-list scrollbar">
+                    <button class="collapsible"><b>Similar Artists</b></button>
+                    <div class="sp-artists-list-content">
+                        <ol class="ol-HomePage">
+                            <div class="latest-release-block" style="width: 100%">
+                                <img src="./images/dragons.PNG" class="q-pics">
+                                <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
+                                <span class="nav-text la-rel-time"
+                                      style="font-size: large; margin-bottom: -6%"><b>...</b><div
+                                        style="font-size: .7rem">4:44</div></span>
+                            </div>
+                            <div class="latest-release-block" style="width: 100%">
+                                <img src="./images/dragons.PNG" class="q-pics">
+                                <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
+                                <span class="nav-text la-rel-time"
+                                      style="font-size: large; margin-bottom: -6%"><b>...</b><div
+                                        style="font-size: .7rem">4:44</div></span>
+                            </div>
+                            <div class="latest-release-block" style="width: 100%">
+                                <img src="./images/dragons.PNG" class="q-pics">
+                                <span class="nav-text"><b>Onism</b><div>Pop Band</div></span>
+                                <span class="nav-text la-rel-time"
+                                      style="font-size: large; margin-bottom: -6%"><b>...</b><div
+                                        style="font-size: .7rem">4:44</div></span>
+                            </div>
+                        </ol>
+                    </div>
                 </div>
-            </div>
 
-            <div id="sp-recently-list" class="queue-section sp-recently-list sp-artists-list scrollbar">
-                <button class="collapsible"><b>Recently Played</b></button>
-                <div class="sp-artists-list-content">
-                    <ol class="ol-HomePage">
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-1.PNG" class="q-pics">
-                            <span class="nav-text"><b>Mirage</b><div>Else</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
-                        </li>
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-2.PNG" class="q-pics">
-                            <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
-                        </li>
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-3.PNG" class="q-pics">
-                            <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
-                        </li>
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-4.PNG" class="q-pics">
-                            <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
-                        </li>
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-1.PNG" class="q-pics">
-                            <span class="nav-text"><b>Mirage</b><div>Else</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
-                        </li>
-                        <li class="li-HomePage" style="color: #A4A4A4">
-                            <img src="./images/q-pic-2.PNG" class="q-pics">
-                            <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
-                            <img src="./images/q-heart.PNG" class="q-heart"style="margin-right: 21%"></span>
-                        </li>
-                    </ol>
+                <div id="sp-recently-list" class="queue-section sp-recently-list sp-artists-list scrollbar">
+                    <button class="collapsible"><b>Recently Played</b></button>
+                    <div class="sp-artists-list-content">
+                        <ol class="ol-HomePage">
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-1.PNG" class="q-pics">
+                                <span class="nav-text"><b>Mirage</b><div>Else</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-2.PNG" class="q-pics">
+                                <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-3.PNG" class="q-pics">
+                                <span class="nav-text"><b>New Skin</b><div>Flume</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-4.PNG" class="q-pics">
+                                <span class="nav-text"><b>White Tiger</b><div>Roary</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-1.PNG" class="q-pics">
+                                <span class="nav-text"><b>Mirage</b><div>Else</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                            <li class="li-HomePage" style="color: #A4A4A4">
+                                <img src="./images/q-pic-2.PNG" class="q-pics">
+                                <span class="nav-text"><b>Worry Bout Us</b><div>Rosie Lowe</div></span>
+                                <img src="./images/q-heart.PNG" class="q-heart" style="margin-right: 21%"></span>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
+        <footer>
+            <iframe id="sp-music-player" src="MusicPlayer.html" width="100%" height="100%" style="border: none; margin-right: -1%;"></iframe>
+        </footer>
+    </section>
 </body>
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
+            if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
