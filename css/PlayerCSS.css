@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: var(--body-bg-color);
+    /*background-color: var(--body-bg-color);*/
     font-family: Arial;
 }
 
@@ -121,7 +121,22 @@ body {
     margin-left: 10%;
 }
 
+.q-pics1 {
+    width: 90px;
+    height: 90px;
+}
 
+.image-text{
+    position: absolute;
+    left: 30%;
+    top:45%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.image-text-middle {
+    left:42%;
+}
 
 /* ----- Carousel in Home Page -------- */
 
@@ -420,6 +435,7 @@ body {
     /*margin-right: 2%;*/
     padding-bottom: 0%;
     border-radius: 50%;
+    opacity: 0.5;
 
 }
 
@@ -435,6 +451,7 @@ body {
     margin-top: 2%
 
 }
+
 .image-sq-genre-2 {
     height: 140px;
     width: 260px;
@@ -772,3 +789,67 @@ input[type=range]::-webkit-slider-thumb {
     border: 2px solid #555555;
 }
 
+
+/* ----- Zoom in on Hover ----------*/
+
+.zoom-parent {
+    position: relative;
+    overflow: hidden;
+}
+.zoom {
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+.zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    filter: blur(0);
+}
+
+/* ------ Drop Down Menu ----------- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*min-width: 160px;*/
+    box-shadow: 0px 8px 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    /*max-width: 150px;
+    max-height: 150px;*/
+    background-color: lightgrey;
+    color: grey;
+}
+
+.drop-down-row {
+    display: flex;
+    flex-direction: row;
+    /*width: 150px;*/
+    margin: 1%;
+    align-items: center;
+    border-bottom: lightgrey 0.05rem solid;
+}
+
+.drop-down-text {
+    color: grey;
+    font-size: small;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+
+/*------   Toggle Between Home Screen and Single Playlist Screen --------- */
